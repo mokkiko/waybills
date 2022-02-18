@@ -11,14 +11,25 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-light bg-light">
-      <form class="form-inline">
-<%= link_to 'RAR', root_path, class: 'btn btn-sm btn-outline-secondary button-padding-navbar' %>
-          <button class="btn btn-sm btn-outline-secondary button-padding-navbar" type="button ">Drivers</button>
-          <button class="btn btn-sm btn-outline-secondary button-padding-navbar" type="button">Waybills</button>
-          <button class="btn btn-sm btn-outline-secondary button-padding-navbar" type="button">Reports</button>
-      </form>
-    </nav>
-    <%= yield %>
-  </body>
+    <div class="container">
+     
+        <nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+
+            <%= link_to 'Drivers', root_path, class: 'btn btn-sm btn-outline-secondary button-padding-navbar' %>
+            <%= link_to 'Waybills', root_path, class: 'btn btn-sm btn-outline-secondary button-padding-navbar' %>
+            <%= link_to 'Reports', root_path, class: 'btn btn-sm btn-outline-secondary button-padding-navbar' %>
+
+          </form>
+          <form class="form-inline my-2 my-lg-0">
+            <%= link_to 'Settings', root_path, class: 'btn btn-outline-success my-2 my-sm-0 button-padding-navbar' %>
+            <%= link_to 'Profile', root_path, class: 'btn btn-outline-success my-2 my-sm-0 button-padding-navbar' %>
+          </form>
+        </nav>
+      
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
+      </body>
 </html>
