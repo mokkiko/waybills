@@ -1,0 +1,62 @@
+<%= form_with(model: driver) do |form| %>
+  <% if driver.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(driver.errors.count, "error") %> prohibited this driver from being saved:</h2>
+
+      <ul>
+        <% driver.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :driver_name %>
+    <%= form.text_field :driver_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :driver_car %>
+    <%= form.text_field :driver_car %>
+  </div>
+
+  <div class="field">
+    <%= form.label :driver_license %>
+    <%= form.text_field :driver_license %>
+  </div>
+
+  <div class="field">
+    <%= form.label :driver_phone %>
+    <%= form.number_field :driver_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :driver_reg_number %>
+    <%= form.text_field :driver_reg_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :driver_category %>
+    <%= form.text_field :driver_category %>
+  </div>
+
+  <div class="field">
+    <%= form.label :driver_organization %>
+    <%= form.text_field :driver_organization %>
+  </div>
+
+  <div class="field">
+    <%= form.label :driver_experience %>
+    <%= form.text_field :driver_experience %>
+  </div>
+
+  <div class="field">
+    <%= form.label :driver_submission %>
+    <%= form.text_field :driver_submission %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

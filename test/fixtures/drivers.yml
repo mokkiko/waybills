@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  driver_name: MyString
+  driver_car: MyString
+  driver_license: MyString
+  driver_phone: 1
+  driver_reg_number: MyString
+  driver_category: MyString
+  driver_organization: MyString
+  driver_experience: MyString
+  string: MyString
+  driver_submission: MyString
+
+two:
+  driver_name: MyString
+  driver_car: MyString
+  driver_license: MyString
+  driver_phone: 1
+  driver_reg_number: MyString
+  driver_category: MyString
+  driver_organization: MyString
+  driver_experience: MyString
+  string: MyString
+  driver_submission: MyString
