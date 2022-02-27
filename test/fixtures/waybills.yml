@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  driver_id: 
+  waybill_date: 2022-02-19
+  mileage_at_morning: 
+  mileage_at_evening: 
+  mileage_daily: 
+
+two:
+  driver_id: 
+  waybill_date: 2022-02-19
+  mileage_at_morning: 
+  mileage_at_evening: 
+  mileage_daily: 

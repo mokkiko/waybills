@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Waybills</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Driver</th>
+      <th>Waybill date</th>
+      <th>Mileage at morning</th>
+      <th>Mileage at evening</th>
+      <th>Mileage daily</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @waybills.each do |waybill| %>
+      <tr>
+        <td><%= waybill.driver_id %></td>
+        <td><%= waybill.waybill_date %></td>
+        <td><%= waybill.mileage_at_morning %></td>
+        <td><%= waybill.mileage_at_evening %></td>
+        <td><%= waybill.mileage_daily %></td>
+        <td><%= link_to 'Show', waybill %></td>
+        <td><%= link_to 'Edit', edit_waybill_path(waybill) %></td>
+        <td><%= link_to 'Destroy', waybill, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Waybill', new_waybill_path %>

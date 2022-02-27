@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :waybills
   resources :drivers
   get 'welcome/index'
   root 'welcome#index'

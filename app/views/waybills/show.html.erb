@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Driver:</strong>
+  <%= @waybill.driver_id %>
+</p>
+
+<p>
+  <strong>Waybill date:</strong>
+  <%= @waybill.waybill_date %>
+</p>
+
+<p>
+  <strong>Mileage at morning:</strong>
+  <%= @waybill.mileage_at_morning %>
+</p>
+
+<p>
+  <strong>Mileage at evening:</strong>
+  <%= @waybill.mileage_at_evening %>
+</p>
+
+<p>
+  <strong>Mileage daily:</strong>
+  <%= @waybill.mileage_daily %>
+</p>
+
+<%= link_to 'Edit', edit_waybill_path(@waybill) %> |
+<%= link_to 'Back', waybills_path %>
